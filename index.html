@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="Pcard">
+      <figure>
+        <img
+          src="rashy.jpg"
+          alt="Profile Picture"
+          class="profile-img"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="card-content">
+        <header>
+          <h2 data-testid="test-user-name">Sadiq Rashidah Adejumoke</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          I am a frontend developer with a love for coding and a passion for
+          creating engaging and memorable web experiences.
+        </p>
+
+        <p id="currentTime" data-testid="test-user-time"></p>
+
+        <nav data-testid="test-user-social-links" class="social-links">
+          <a
+            href="https://www.linkedin.com/in/rashidah-sadiq"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-linkedin"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/S-Rashy"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+            >GitHub</a
+          >
+          <a
+            href="https://twitter.com/RforRashy"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-twitter"
+            >X</a
+          >
+        </nav>
+
+        <div class="hobbiesNDislikes">
+          <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Coding</li>
+              <li>Reading Novels</li>
+              <li>Watching Movies</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Lying</li>
+              <li>Disorderliness</li>
+              <li>Selfishness</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Pcard {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.Pcard:hover {
+  transform: translateY(-5px);
+}
+
+.Pcard figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4a5fd8;
+  padding: 40px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 40px;
+}
+
+.card-content h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-content p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+#currentTime {
+  text-align: center;
+  font-size: 14px;
+  color: #4a5fd8;
+  font-weight: 600;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: "Courier New", monospace;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  background: #4a5fd8;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 95, 216, 0.3);
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(74, 95, 216, 0.4);
+  background: #3a4fc8;
+}
+
+.social-links a:focus {
+  outline: 3px solid #667eea;
+  outline-offset: 2px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #333;
+  padding: 8px 0;
+  width: 100px;
+  border-bottom: 3px solid #4a5fd8;
+}
+
+.hobbiesNDislikes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-content ul {
+  list-style: none;
+}
+
+.card-content ul li {
+  padding: 8px 0 8px 25px;
+  color: #555;
+  font-size: 15px;
+  position: relative;
+}
+
+.card-content ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4a5fd8;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section:last-child ul li::before {
+  content: "✗";
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .Pcard {
+    flex-direction: column;
+  }
+
+ 
+}
+
+@media (max-width: 480px) { 
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-content h2 {
+    font-size: 20px;
+  }
+
+  .social-links a {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+  .hobbiesNDislikes {
+    flex-direction: column;
+    gap: 30px;}
+}
