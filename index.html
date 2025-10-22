@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile Card</title>
+    <title>Rash's Profile Card</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="R.jpg" type="image/x-icon">
   </head>
   <body>
-    <article data-testid="test-profile-card" class="Pcard">
+    <div class="card-wrapper">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <article data-testid="test-profile-card" class="Pcard">
       <figure>
         <img
           src="rashy.jpg"
@@ -73,6 +83,7 @@
         </div>
       </div>
     </article>
+    </div>
 
     <script src="script.js"></script>
   </body>
