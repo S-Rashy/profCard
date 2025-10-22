@@ -53,7 +53,12 @@ All pages are responsive, accessible, and include the required `data-testid` att
 
 ---
 
+## 🧩 Accessibility and Testing
+- All visible elements include `data-testid` attributes for stable automated testing.  
+- All pages support keyboard navigation and have visible focus styles.  
+- Forms and links include proper labels and attributes for accessibility.
 
+---
 
 ## 👩‍💻 Author
 Sadiq Rashidah Adejumoke  
